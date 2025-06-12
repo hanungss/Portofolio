@@ -336,3 +336,47 @@ h1 {
   background: #f3f3f3;
   color: #000;
 }
+
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .navbar,
+body.dark .project-card-wrapper,
+body.dark .contact-card {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+body.dark .card,
+body.dark .project-card {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+body.dark a.btn-custom,
+body.dark .btn {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+body.dark .btn:hover {
+  background: #eee;
+}
+
+body.dark .github-icon {
+  background: #333;
+  color: #fff;
+}
+
+body.dark .contact-card p.text-muted {
+  color: #ccc !important;
+}
+
+
+/* Untuk teks "Follow Me" */
+body.dark .follow-box span {
+  color: #ccc;
+}

@@ -93,4 +93,15 @@ document.querySelector(".copy-email")?.addEventListener("click", () => {
   alert("Email copied!");
 });
 
+const toggle = document.getElementById("darkToggle");
+toggle?.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+
+  // Optional: ganti ikon
+  const icon = toggle.querySelector("i");
+  icon.classList.toggle("bi-moon");
+  icon.classList.toggle("bi-sun");
+});
+
+
 document.addEventListener("DOMContentLoaded", loadProjects);
