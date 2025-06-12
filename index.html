@@ -1,89 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hanung — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="Custom HTML by hanungss">
+<title>Hanung – Creative Developer Portfolio</title>
+<meta name="description" content="Portfolio of Hanung – a developer with a passion for clean UI, web automation, and smart digital solutions. Explore selected projects, designs, and experiments.">
+<link rel="icon" href="assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hanung – Creative Developer Portfolio">
+<meta property="og:description" content="Explore the works and experiments of Hanung, a developer focused on smart, functional web interfaces and tools.">
+<meta property="og:image" content="assets/images/preview.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hanung – Creative Developer Portfolio">
+<meta name="twitter:description" content="Explore the works and experiments of Hanung, a developer focused on smart, functional web interfaces and tools.">
+<meta name="twitter:image" content="assets/images/preview.png">
+
+
+  <!-- Bootstrap & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      scroll-behavior: smooth;
-      background-color: #fefefe;
-      color: #111;
-      padding-top: 80px;
-    }
-    .nav-link {
-      transition: 0.2s;
-    }
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-    .hero {
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
-      font-weight: 700;
-    }
-    .hero p {
-      font-size: 1.25rem;
-      color: #555;
-    }
-    .btn-custom {
-      background-color: #111;
-      color: #fff;
-      border-radius: 50px;
-      padding: 0.6rem 1.5rem;
-      transition: 0.3s;
-    }
-    .btn-custom:hover {
-      background-color: #333;
-    }
-    section {
-      padding: 80px 0;
-    }
-    .project-card {
-      border: none;
-      border-radius: 12px;
-      transition: transform 0.3s ease;
-    }
-    .project-card:hover {
-      transform: scale(1.02);
-    }
-    footer {
-      padding: 2rem 0;
-      text-align: center;
-      background: #f1f1f1;
-      font-size: 0.9rem;
-    }
-  </style>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Hanung</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <a class="navbar-brand fw-bold" href="#">hanung</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Hero -->
 <section class="hero" id="home">
@@ -105,36 +76,40 @@
   <div class="container">
     <h2 class="text-center fw-bold mb-5">Selected Projects</h2>
     <div class="row g-4">
+      <!-- Perdami Client -->
       <div class="col-md-4">
         <div class="card project-card shadow-sm">
-          <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 1">
+          <img src="assets/images/perdami.png" class="card-img-top" alt="Perdami Client">
           <div class="card-body">
-            <h5 class="card-title">Project One</h5>
-            <p class="card-text">Landing page for product launch with responsive layout.</p>
+            <h5 class="card-title">Perdami Client</h5>
+            <p class="card-text">Aplikasi CodeIgniter 3 untuk resertifikasi dokter mata di PERDAMI (2018).</p>
           </div>
         </div>
       </div>
+      <!-- Klasifikasi Pepaya -->
       <div class="col-md-4">
         <div class="card project-card shadow-sm">
-          <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 2">
+          <img src="assets/images/pepaya.png" class="card-img-top" alt="Klasifikasi Pepaya">
           <div class="card-body">
-            <h5 class="card-title">Project Two</h5>
-            <p class="card-text">Personal portfolio for photographer with gallery modal.</p>
+            <h5 class="card-title">Klasifikasi Pepaya</h5>
+            <p class="card-text">Aplikasi MATLAB untuk klasifikasi kematangan pepaya pakai Naive Bayes & GLCM.</p>
           </div>
         </div>
       </div>
+      <!-- BotWA -->
       <div class="col-md-4">
         <div class="card project-card shadow-sm">
-          <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Project 3">
+          <img src="assets/images/botwa.png" class="card-img-top" alt="BotWA">
           <div class="card-body">
-            <h5 class="card-title">Project Three</h5>
-            <p class="card-text">Company website with blog and dark mode toggle.</p>
+            <h5 class="card-title">BotWA</h5>
+            <p class="card-text">Telegram/WhatsApp bot (BotWA) cara otomatisasi komunikasi melalui API.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- Contact -->
 <section id="contact">
@@ -152,6 +127,8 @@
   &copy; 2025 Hanung. All rights reserved.
 </footer>
 
+<!-- Bootstrap JS + Custom JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
