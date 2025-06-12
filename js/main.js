@@ -61,26 +61,28 @@ async function loadProjects() {
   repos.forEach((repo) => {
     if (!repo.fork && count < maxProjects) {
       const col = document.createElement("div");
-      col.className = "col-md-4";
+      col.className = "col-md-4 d-flex";
 
       col.innerHTML = `
-        <a href="${
-          repo.html_url
-        }" target="_blank" class="text-decoration-none text-dark">
-          <div class="card project-card shadow-sm position-relative">
-            <div class="github-icon">
-              <i class="bi bi-github"></i>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">${repo.name}</h5>
-              <p class="card-text">${
-                repo.description || "No description provided."
-              }</p>
-
-            </div>
-          </div>
-        </a>
-      `;
+  <a href="${
+    repo.html_url
+  }" target="_blank" class="text-decoration-none text-dark w-100">
+    <div class="card project-card shadow-sm position-relative h-100">
+      <div class="github-icon">
+        <i class="bi bi-github"></i>
+      </div>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">${repo.name}</h5>
+        <p class="card-text flex-grow-1">${
+          repo.description || "No description provided."
+        }</p>
+        <div class="text-end mt-2">
+          <i class="bi bi-box-arrow-up-right"></i>
+        </div>
+      </div>
+    </div>
+  </a>
+`;
 
       container.appendChild(col);
       count++;
@@ -102,6 +104,5 @@ toggle?.addEventListener("click", () => {
   icon.classList.toggle("bi-moon");
   icon.classList.toggle("bi-sun");
 });
-
 
 document.addEventListener("DOMContentLoaded", loadProjects);
