@@ -11,8 +11,10 @@ Personal web portfolio built with HTML, Bootstrap 5, and custom CSS/JS. Showcase
 - Smooth scroll and scrollspy
 - Animated contact section with call-to-action
 
-## 📁 Project Structure
+---
 
+## 📁 Project Structure
+```
 ├── index.html # Main HTML file
 ├── css/
 │ └── style.css # Custom styles
@@ -20,7 +22,8 @@ Personal web portfolio built with HTML, Bootstrap 5, and custom CSS/JS. Showcase
 │ └── main.js # Scroll effects & GitHub API integration
 └── assets/
 └── images/ # Project thumbnails, avatar, icons
-
+```
+---
 
 ## 📷 Preview
 
