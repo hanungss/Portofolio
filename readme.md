@@ -29,7 +29,7 @@ Personal web portfolio built with HTML, Bootstrap 5, and custom CSS/JS. Showcase
 ## 📬 Contact
 
 Want to collaborate or hire me?  
-📧 [hanung@email.com](mailto:hanungsoekamti@gmail.com)
+📧 [hanungsoekamti@gmail.com](mailto:hanungsoekamti@gmail.com)
 
 ---
 
